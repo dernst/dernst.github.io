@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
 <script src="pkgdown.js"></script><meta property="og:title" content="Flexible Clustering of Ordinal and Mixed-with-Ordinal Data">
-<meta property="og:description" content="Extends the capabilities for flexible partitioning and model-based clustering available in the packages flexclust and flexmix to handle ordinal and mixed-with ordinal data types via new distance, centroid and driver functions that make various assumptions regarding ordinality. Using them within the flex-scheme allows for easy comparisons across methods.">
+<meta property="og:description" content="Extends the capabilities for flexible partitioning and model-based clustering available in the packages flexclust and flexmix to handle ordinal and mixed-with-ordinal data types via new distance, centroid and driver functions that make various assumptions regarding ordinality. Using them within the flex-scheme allows for easy comparisons across methods.">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -50,7 +50,7 @@
   </a>
   <ul class="dropdown-menu" role="menu">
 <li>
-      <a href="articles/Intro2Flexord.html">Introduction to Flexible Clustering of (mixed-with-)ordinal Data</a>
+      <a href="articles/Intro2Flexord.html">Introduction to Flexible Clustering of (Mixed-With-)Ordinal Data</a>
     </li>
   </ul>
 </li>
@@ -77,8 +77,17 @@
 <div class="section level1">
 <div class="page-header"><h1 id="flexord">flexord<a class="anchor" aria-label="anchor" href="#flexord"></a>
 </h1></div>
-<p>This is the github repository and R package accompanying the paper “Ordinal clustering in the flex-scheme” (2025) by Ernst D, Ortega Menjivar L, Scharl T, Grün B currently submitted to AJS.</p>
-<p>This is currently still work in progress and some parts may not work at all because they rely on unpublished changes to the <code>flexclust</code> package.</p>
+<p>This <code>R</code> package and <code>github</code> repository is an add-on package to the <code>R</code> packages <a href="https://cran.r-project.org/web/packages/flexclust/index.html" class="external-link"><code>flexclust</code></a> and <a href="https://cran.r-project.org/web/packages/flexmix/index.html" class="external-link"><code>flexmix</code></a>. These two root packages are suites for flexible method comparison and clustering with both partitioning and model-based methods.</p>
+<p>With <code>flexord</code>, we provide new distance and centroid functions and new distribution drivers that are tailored towards clustering ordinal or mixed-with-ordinal data.</p>
+<p>We wrote this package accompanying the paper “Ordinal clustering in the flex-scheme” (2025) by Ernst D, Ortega Menjivar L, Scharl T, Grün B, currently submitted to <a href="https://ajs.or.at" class="external-link">AJS</a>. In this paper, we collected the state of the art of ordinal data clustering and applied many of the methods in our extensive simulation study. The simulation reproduction code itself is collected in the repository <a href="https://github.com/zettlchen/AJS-flexord" class="external-link"><code>AJS-flexord</code></a>. <replace with zenodo doi></replace></p>
+<p>You can find a more end user friendly introduction into the package, and a listing of the new methods we provide <a href="https://dernst.github.io/flexord/articles/Intro2Flexord.html" class="external-link">here</a>.</p>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
+<p>You can install the developer version of the package via:</p>
+<pre><code><span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"dernst/flexord"</span><span class="op">)</span></span></code></pre>
+<p>The stable version will soon be available on CRAN (via <code>install.packages("flexord")</code>).</p>
+</div>
 </div>
   </div>
 
